@@ -1,0 +1,19 @@
+﻿<div class="thumbnail-section">
+    <a>
+        <div class="title">@Title</div>
+        <div class="tags">@Description</div>
+        <img src="/images/@Image" style="max-width:250px">
+    </a>
+</div>
+
+@code
+{
+    [Parameter]
+    public string Image { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public string Description { get; set; }
+}
